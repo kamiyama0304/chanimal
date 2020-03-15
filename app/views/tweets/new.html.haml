@@ -1,0 +1,11 @@
+.contents.row
+  .container
+    = form_with(model: @tweet, local: true) do |form|
+      %h3.new-post
+        投稿する
+      = form.text_field :name, placeholder: "Nickname", class: :Nickname
+      = form.text_field :image, placeholder: "Image Url",class: :Image_url
+      = form.text_area :text, placeholder: "text" , rows: "10",class: :text
+      -# %input{:name => "bin", :style => " -webkit-appearance: none; width:400px;height:200px;", :type => "button", :value => "送信"}/
+      .send-area
+        = form.submit "SEND",class: :send_btn
