@@ -5,7 +5,7 @@ body{
 .contents{
   width: 100vw;
   height: 100vh;
-  background-color: palegreen;
+  // background-color: palegreen;
   // opacity: 0.5;
   box-sizing: border-box;
   padding: 40px;
@@ -29,21 +29,23 @@ body{
           height: 100%;
           background-size: 100% 100%;
         }
+        .more{
+          width: 100px;
+          height: 100px;
+          a{
+            color: red;
+            text-decoration: none;
+            font-size: 20px;
+          }
+        }
+        
         .content-message{
           width: 50%;
           height: 30%;
           font-size: 20px;
           font-family: fantasy;
         }
-      }
-      
-      
+      } 
     }
-    
-    
-    // &__content-message{
-    //   display: flex;
-    // }
   }
-
 }

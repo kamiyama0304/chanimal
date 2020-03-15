@@ -1,0 +1,66 @@
+.content_post{
+  width: 40%;
+  height: 300px;
+  margin: 0 auto;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+.more{
+  width: 100%;
+  height: calc(100vh - 380px);
+  // background-color: salmon;
+  .more_list{
+    width: 100%;
+    height: 20%;
+    // background-color: springgreen;
+    // display: flex;
+    .edit_images {
+      width: 100%;
+      height: 100%;
+      // background-color: tan;
+      text-align: center;
+      font-family: YuMincho;
+      
+      .edit_image{
+        text-decoration: none;
+        font-size: 50px;
+        padding: 10px;
+        color: greenyellow;
+        text-shadow: 10px 10px 10px red;
+      }
+      .destroy_image{
+        text-decoration: none;
+        font-size: 50px;
+        padding: 10px;
+        color: hotpink;
+        text-shadow: 10px 10px 10px greenyellow;
+      }
+    }
+    .destroy_images{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    
+  }
+  .edit_text{
+    width: 100%;
+    height: 20%;
+    // background-color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    font-family: YuMincho;
+    color: white;
+    text-shadow: 10px 10px 10px red;
+  }
+  .edit_name{
+    width: 100%;
+    height: 20%;
+    // background-color: #ffffff;
+    font-size: 50px;
+    font-family: YuMincho;
+    color: white;
+    text-align: center;
+    text-shadow: 10px 10px 10px red;
+  }
+}

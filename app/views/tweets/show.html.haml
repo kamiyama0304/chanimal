@@ -1,0 +1,14 @@
+.contents.row
+  .content_post{:style => "background-image: url(#{@tweet.image});"}
+  .more
+    -# %span= image_tag 'arrow_top.png'
+    %ul.more_list
+      %li.edit_images
+        = link_to '編集', "/tweets/#{@tweet.id}/edit", method: :get,class: :edit_image
+      
+        = link_to '削除', "/tweets/#{@tweet.id}", method: :delete,class: :destroy_image
+    .edit_text
+      = simple_format(@tweet.text)
+    .edit_name
+      %span.username
+        = @tweet.name
