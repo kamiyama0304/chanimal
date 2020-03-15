@@ -1,6 +1,11 @@
-.contents.row
-  - @tweets.each do |tweet|
-    .content_post{:style => "background-image: url(#{tweet.image});"}
-      = simple_format(tweet.text)
-      %span.name
-        = tweet.name
+.contents
+  .maxpost
+    .leftbox
+      - @tweets.each do |tweet|
+        .post-image
+          .content-post{:style => "background-image: url(#{tweet.image});",class: :contentimage}
+          .content-message
+            = simple_format(tweet.text)
+            .content_user
+              %span.name
+                = tweet.name
