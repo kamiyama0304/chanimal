@@ -23,6 +23,19 @@ $cBlack: black;
   margin-left: 20px;
   font-family: Comic Sans MS;
 }
+.post{
+  text-decoration: none;
+  color: red;
+  font-size: 30px;
+  font-family: YuMincho;
+  line-height: 100px;
+  padding: 0 20px;
+  text-shadow: 5px 5px 5px #D0FF43;
+  font-weight: bold;
+  &:hover{
+    color: #FF00FF;
+  }
+}
 .user_nav{
   margin: 20px;
   .btn{

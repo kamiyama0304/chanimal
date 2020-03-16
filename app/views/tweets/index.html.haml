@@ -18,5 +18,8 @@
             = simple_format(tweet.text)
             .content_user
               %span.name
-                = tweet.name
+                %a{:href => "/users/#{tweet.user.id}"}
+                  %span 投稿者
+                  = tweet.user.nickname
+
 = render 'shared/footer'
