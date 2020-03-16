@@ -9,8 +9,8 @@
             = current_user.nickname
             %ul.user__info
               %li
-                = link_to "マイページ", "/users/#{current_user.id}"
-                = link_to "ログアウト", destroy_user_session_path, method: :delete
+                = link_to "マイページ", "/users/#{current_user.id}",class: 'post'
+                = link_to "ログアウト", destroy_user_session_path, method: :delete,class: 'post'
 
       - else
         .grid-6

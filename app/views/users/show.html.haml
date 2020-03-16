@@ -1,8 +1,8 @@
 .contents.row
-  %p
-    = @nickname
-    さんの投稿一覧
+  %p.mypage
+    =@nickname
+    の投稿
   - @tweets.each do |tweet|
     .content_post{:style => "background-image: url(#{tweet.image});"}
       = simple_format(tweet.text)
-      %span.name= tweet.name
+      
