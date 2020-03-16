@@ -5,8 +5,13 @@
         = link_to "Chanimal", root_path, class: "header-chanimal"
       - if user_signed_in?
         .user_nav.grid-6
-          = link_to "ログアウト", destroy_user_session_path, method: :delete,class: 'post'
-          -# = link_to  "投稿する", "/tweets/new", class: "post"
+          %span
+            = current_user.nickname
+            %ul.user__info
+              %li
+                = link_to "マイページ", "/users/#{current_user.id}"
+                = link_to "ログアウト", destroy_user_session_path, method: :delete
+
       - else
         .grid-6
           = link_to "ログイン", new_user_session_path, class: 'post'
