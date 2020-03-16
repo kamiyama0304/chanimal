@@ -1,0 +1,31 @@
+.log-in{
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  font-family: fantasy;
+  cursor: pointer;
+  &:hover{
+    color: #FF00FF;
+  }
+}
+.field{
+  width: 80%;
+  margin: 0 auto;
+  label{
+    font-size: 40px;
+    font-family: fantasy;
+  }
+  input{
+    width: 100%;
+  }
+}
+.actions{
+  width: 80%;
+  margin: 0 auto;
+  .login-btn{
+    width: 30%;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+}
