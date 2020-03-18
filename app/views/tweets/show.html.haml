@@ -13,11 +13,11 @@
       .edit_name
         %span.username
           = @tweet.user.nickname
-  .container
+  .container_show
     - if current_user
       = form_with(model: [@tweet, @comment], local: true) do |form|
-        = form.text_area :text, placeholder: "コメントする", rows: "2"
-        = form.submit "SEND"
+        = form.text_area :text, placeholder: "コメントする", rows: "2",class: :show_comment
+        = form.submit "SEND",class: :show_send
     - else
       %strong
         %p ※※※ コメントの投稿には新規登録/ログインが必要です ※※※
@@ -26,7 +26,7 @@
       %h4 ＜コメント一覧＞
       - if @comments
         - @comments.each do |comment|
-          %p
+          %p.show_comments_p
             %strong
               = link_to comment.user.nickname, "/users/#{comment.user_id}"
               ：
