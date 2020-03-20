@@ -1,3 +1,4 @@
+= render 'shared/header'
 .contents.row
   .content_post{:style => "background-image: url(#{@tweet.image});"}
   - if user_signed_in? && current_user.id == @tweet.user_id
@@ -24,12 +25,13 @@
 
     .comments
       %h4 ＜コメント一覧＞
-      - if @comments
-        - @comments.each do |comment|
-          %p.show_comments_p
-            %strong
-              = link_to comment.user.nickname, "/users/#{comment.user_id}"
-              ：
-            = comment.text
+      .comments-p
+        - if @comments
+          - @comments.each do |comment|
+            %p.show_comments_p
+              %strong
+                = link_to comment.user.nickname, "/users/#{comment.user_id}"
+                ：
+              = comment.text
 
 

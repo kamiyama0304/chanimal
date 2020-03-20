@@ -1,0 +1,27 @@
+.search-page{
+  width: 100vw;
+  height: calc(100vh - 100px);
+  padding: 30px;
+  box-sizing: border-box;
+  margin: auto;
+
+  .search-form-after{
+    margin-top: 30px;
+    align-items: center;
+    .search-input-after{
+      width: 100%;
+      height: 50px;
+    }
+    .search-btn{
+      width: 10%;
+      
+    }
+  }
+  .contents-search{
+    overflow: scroll;
+    width: 100%;
+    height: calc(100% - 100px);
+    margin-top: 10px;
+  }
+}
+

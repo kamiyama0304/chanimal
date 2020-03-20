@@ -70,14 +70,16 @@
   font-family: fantasy;
   text-align: center;
   text-shadow: 10px 10px 10px greenyellow;
+  height: 80px;
 }
 .container_show{
   width: 100%;
-  height: 100%;
+  
   text-align: center;
   .show_comment{
     width: 100%;
     height: 100px;
+    margin-top: 10px;
   }
   .show_send{
     text-align: center;
@@ -85,12 +87,24 @@
   .comments{
     width: 100%;
     height: 100%;
-  }
-  .show_comments_p{
-    opacity: 0.8;
-    margin: 0 auto;
-    width: 80%;
     overflow: scroll;
-    background-color: yellowgreen;
+    .comments-p{
+      overflow: scroll;
+      height: 150px;
+
+      .show_comments_p{
+        opacity: 0.8;
+        margin: 0 auto;
+        width: 80%;
+        background-color: yellowgreen;
+      }
+    }
   }
+
+  
+}
+.contents-user{
+  overflow: scroll;
+  width: 100%;
+  height: calc(100vh - 200px);
 }
