@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: chanimal_production
-  username: chanimal
-  password: <%= ENV['CHANIMAL_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
