@@ -10,6 +10,7 @@
         = f.label :password
         %br/
         = f.password_field :password, autocomplete: "off"
+        %h3 Up to 6 characters
       - if devise_mapping.rememberable?
         .field
           = f.label :remember_me
