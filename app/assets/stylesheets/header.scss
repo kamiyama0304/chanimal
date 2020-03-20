@@ -23,12 +23,18 @@ $cBlack: black;
   margin-left: 20px;
   font-family: Comic Sans MS;
 }
+.login-user{
+  color: red;
+  font-size: 40px;
+  font-family: fantasy;
+  text-shadow: 5px 5px 5px #D0FF43;
+}
 .post{
   text-decoration: none;
   color: red;
   font-size: 30px;
   font-family: YuMincho;
-  line-height: 100px;
+  // line-height: 100px;
   padding: 0 20px;
   text-shadow: 5px 5px 5px #D0FF43;
   font-weight: bold;
@@ -38,6 +44,7 @@ $cBlack: black;
 }
 .user_nav{
   margin: 20px;
+  text-align: center;
   .btn{
     position: relative;
     display: inline-block;

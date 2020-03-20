@@ -5,7 +5,7 @@
         = link_to "Chanimal", root_path, class: "header-chanimal"
       - if user_signed_in?
         .user_nav.grid-6
-          %span
+          %span.login-user
             = current_user.nickname
             %ul.user__info
               %li
